@@ -1,0 +1,30 @@
+h1 {
+    color: blue;
+}
+
+p {
+    color: red;
+}
+
+button {
+    padding: 5px;
+}
+
+ul {
+    color: green;
+    list-style-type: none;
+    padding: 0;
+}
+
+#btnEnviar{
+  
+}
+
+.cabecalho {
+    font-weight: bold;
+}
+
+/*body {
+    background-color: brown;
+}*/
+
