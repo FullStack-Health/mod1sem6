@@ -34,3 +34,27 @@ function trocaCorParagrafos() {
 
 
 btnColor.removeEventListener("click", trocaCorParagrafos);
+
+
+let inputData = document.createElement("input");
+inputData.type = "date";
+document.body.appendChild(inputData);
+
+let listaDeAfazeres = document.querySelector("#todolist");
+let listItemPersistente = document.querySelector("#itemPersistente");
+
+let itensTodo = document.getElementsByClassName("todoItem");
+let ultimoItemTodo = itensTodo[0];
+
+let listItemNovo = document.createElement("li");
+listItemNovo.id = "listItemNovo";
+listItemNovo.className = "todoItem";
+listItemNovo.innerHTML = "<input type='checkbox'><span>Item Novo</span><button>X</button>";
+
+listaDeAfazeres.insertBefore(listItemNovo, listItemPersistente);
+
+document.body.appendChild(btnColor);
+
+let novoBotao = btnColor.cloneNode(true);
+
+document.body.appendChild(novoBotao);
