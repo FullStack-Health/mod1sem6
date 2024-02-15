@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="formulario" novalidate>
+        <label for="selectEstadoCivil">Selecione o Estado Civil:</label>
+        <br>
+        <select name="" id="selectEstadoCivil">
+            <option value="Solteiro(a)">Solteiro(a)</option>
+            <option value="Casado(a)">Casado(a)</option>
+            <option value="Separado(a)">Separado(a)</option>
+        </select>
+        <label for="nomeConjuge">nome do(a) cônjuge</label>
+        <input type="text" id="nomeConjuge" disabled>
+    
+        <br>
+        <label for="inputAnoNascimento">Digite o ano do nascimento: *</label>
+        <input required type="number" name="" id="inputAnoNascimento" max="2024" min="1900">
+
+        <br>
+        <label for="inputEmail">Digite um e-mail:</label>
+        <input placeholder="user@email.com" type="text" pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.?([a-z]+)?$">
+        <br>
+        <label for="">Telefone:</label>
+        <input placeholder="(XX) 99999-9999" type="text">
+
+        <br>
+        <input type="submit" value="Enviar dados">
+    </form>
+    
+</body>
+</html>
